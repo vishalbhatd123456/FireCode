@@ -1,0 +1,6 @@
+public static ArrayList<String> removeDuplicates(List<String> input) {                
+    TreeSet<String> treeSet = new TreeSet<String>();
+    treeSet.addAll(input);
+    ArrayList<String> newList = new ArrayList<String>(treeSet); 
+    return newList;
+}
