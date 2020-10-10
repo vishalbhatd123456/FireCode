@@ -1,0 +1,17 @@
+// java.util.* and java.util.streams.* have been imported for this problem.
+// You don't need any other imports.
+
+public static boolean isPowOfTwo(int num) {
+    if(num == 1){
+        return true;
+    }
+    if(num%2 != 0){
+        return false;
+    }
+    for(int i = 0;i<=num;i++){
+        if(Math.pow(num,i) == num){
+            return true;
+        }
+    }
+    return false;
+}
